@@ -4,14 +4,17 @@
   "description": "Web automation tests.",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "start": "node index.js"
+    "test": "npm run start",
+    "start": "mocha lib/**/*.test.js"
   },
   "author": "Kevin Smith",
   "license": "ISC",
   "dependencies": {
+    "chai": "^3.5.0",
     "chromedriver": "^2.29.0",
     "dotenv": "^4.0.0",
+    "glob": "^7.1.1",
+    "mocha": "^3.2.0",
     "selenium-webdriver": "^3.3.0"
   }
 }
